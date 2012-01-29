@@ -8,7 +8,7 @@
 	<property name="build" value="${basedir}/build" />
 	<property name="lib" value="${basedir}/lib" />
 	<property name="javadoc" value="${basedir}/javadoc" />
-	<property name="version" value="1.0" />
+	<property name="version" value="0.1" />
 	<property name="debug" value="on" />
 	<property name="author" value="PHILIPPE_Jean-Baptiste" />
 
@@ -29,7 +29,7 @@
 	</target>
 
 	<target name="compil" depends="init , javadoc" description="construct class project">
-		<javac srcdir="${src}" destdir="${build}" debug="${debug}" debuglevel="lines,vars,source" includeantruntime="false">
+		<javac srcdir="${src}" destdir="${build}" target="1.7" debug="${debug}" debuglevel="lines,vars,source" includeantruntime="false">
 			<classpath refid="jar" />
 		</javac>
 	</target>
