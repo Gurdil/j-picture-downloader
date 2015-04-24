@@ -1,0 +1,1 @@
+Easy copy for download serie of picture with http protocol.
